@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Simple Games</string>
+    <string name="runda">Round</string>
+    <string name="playerA">Player A -</string>
+    <string name="playerB">Player B -</string>
+    <string name="typeHere">Enter number</string>
+    <string name="checkButton">Check</string>
+    <string name="resetButton">Reset Game</string>
+    <string name="info">A random number from 0-100 has been selected now. Who will guess the correct number ?</string>
+    <string name="attempt1String">Attempt 1</string>
+    <string name="attemptNo">Attempt number:</string>
+    <string name="typeNumberError">You have to type a number !</string>
+    <string name="enteredNo">Entered number:</string>
+    <string name="tooMuch"> - TOO MUCH !</string>
+    <string name="notEnough"> - NOT ENOUGH !</string>
+    <string name="winner"> Congratulations, this is the correct answer :)</string>
+    <string name="pointAdded">It is a point for You!</string>
+    <string name="newNumberDraw">A new number was drawn!</string>
+
+</resources>

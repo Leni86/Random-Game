@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.simplegames.MainActivity"
+    android:background="@drawable/backrepeat"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/title_attempt"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/info"/>
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/runda"
+            android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/playerA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/playerA"
+                    android:textSize="19sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000000" />
+
+                <EditText
+                    android:id="@+id/shoot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/typeHere"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/badAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="#FF0000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/attempt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/playerB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/playerB"
+                    android:textSize="19sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000000"/>
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/shoot2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/typeHere"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/badAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="#FF0000"/>
+                <TextView
+                    android:id="@+id/attempt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkButton"
+                    android:onClick="checking"
+                    android:layout_gravity="center"
+                    android:background="#292727"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:background="#292727"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkButton"
+                    android:onClick="checking2"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <Button
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:background="#292727"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:onClick="reset"
+                android:text="@string/resetButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
